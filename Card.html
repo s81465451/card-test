@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卡片</title>
+  </head>
+  <body>
+    <div class="card-box">
+      <div class="img-box">
+        <img src="./images/homepage_deco01.png">
+      </div>
+      <div class="text-box">
+        <div class="tb-name">Sophie Wu</div>
+        <div class="tb-work">ThinkPower Engineer</div>
+      </div>
+      <div class="day-box">20/02/15 by Sophie</div>
+    </div>
+  </body>
+</html>
+
+<style>
+
+  div {
+    box-sizing: border-box;
+  }
+
+  .card-box {
+    width: 350px;
+    height: 500px;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    border: 1px #CCC solid;
+    box-shadow: 0 2px 12px -3px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Comic Sans MS';
+  }
+
+    .img-box {
+      width: 250px;
+      height: 200px;
+      margin: 40px 0 30px 0;
+    }
+    .img-box > img{
+      width: 100%;
+      filter: drop-shadow(2px 10px 6px rgba(0, 0, 0, 0.7));
+    }
+
+    .text-box {
+      width: 100%;
+      flex: 1;
+      padding-left: 40px;
+    }
+
+    .text-box .tb-name{
+      font-size: 35px;
+    }
+
+    .text-box .tb-work{
+      font-size: 24px;
+      padding: 40px 0 0 40px;
+    }
+
+    .day-box {
+      width: 100%;
+      font-size: 16px;
+      padding: 15px 20px;
+      text-align: end;
+    }
+</style>
