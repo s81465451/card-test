@@ -7,16 +7,28 @@
     <title>卡片</title>
   </head>
   <body>
-    <div class="card-box">
-      <div class="img-box">
-        <img src="./images/homepage_deco01.png">
+    <div id="app">
+      <div class="card-box" :style="{background: inputColor}">
+        <div :class="imgClass">
+          <img :src="imgSrc">
+        </div>
+        <div class="text-box">
+          <div class="tb-name" v-text="name"></div>
+          <div class="tb-work" v-text="work"></div>
+        </div>
+        <div class="day-box" v-text="date"></div>
       </div>
-      <div class="text-box">
-        <div class="tb-name">Sophie Wu</div>
-        <div class="tb-work">ThinkPower Engineer</div>
+      <div>
+        <input type="text" v-model="inputText">
+        <button @click="btnClick">確認</button>
       </div>
-      <div class="day-box">20/02/15 by Sophie</div>
+      <div>
+        <label>選擇背景顏色 : </label>
+        <input type="color" v-model="inputColor">
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./vue.js"></script>
   </body>
 </html>
 
